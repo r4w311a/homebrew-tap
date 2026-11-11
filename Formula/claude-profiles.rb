@@ -1,8 +1,8 @@
 class ClaudeProfiles < Formula
   desc "Run several Claude Desktop accounts side by side on a Mac"
   homepage "https://github.com/r4w311a/claude-profiles"
-  url "https://github.com/r4w311a/claude-profiles/releases/download/v1.0.1/claude-profiles-1.0.1.tar.gz"
-  sha256 "99f716db55a5899b34d2bd25727307b6b50d0b62e25d11e2a93d0fa4730a5c84"
+  url "https://github.com/r4w311a/claude-profiles/releases/download/v1.0.2/claude-profiles-1.0.2.tar.gz"
+  sha256 "53b422c3b9dfff4ba039e64e271a543ad6f4e68871caf179022b75e0dc5125b2"
   license "MIT"
 
   depends_on macos: :ventura
@@ -22,6 +22,6 @@ class ClaudeProfiles < Formula
   end
 
   test do
-    assert_equal "1.0.1", shell_output("#{bin}/claude-profiles --version").strip
+    assert_equal "1.0.2", shell_output("#{bin}/claude-profiles --version").strip
   end
 end
